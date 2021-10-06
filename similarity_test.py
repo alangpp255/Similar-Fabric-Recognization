@@ -11,9 +11,6 @@ os_base='C:/Users/Alan/Desktop/Bilab/Weaver/similarity_test/'
 #cut down for similarity
 cut = 0.8
 
-top_true=[] #to counting confusion matrix
-top_pred=[] #to counting confusion matrix
-
 #store original image to visualize 
 images =[]
 #Store all features by file name or id
@@ -55,26 +52,5 @@ print(sim_dict)
     
     
     
-    # # time_end = time.time()
-    # # time_c= time_end - time_start
-    # # print('time cost', time_c, 's')
-    
-    # #排序
-    # top = []
-    # for t in range(len(sim)):
-    #     if max(sim) >= cut:
-    #         top_pred.append(1)
-    #         if (feature_name[sim.index(max(sim))].split('_'))[0] == (t_feature_name[i].split('_'))[0]:
-    #             top_true.append(1)
-    #         else:
-    #             top_true.append(0)
-    #         top.append(sim.index(max(sim)))
-    #         rating.append(max(sim))
-    #     else:
-    #         top_pred.append(0)
-    #         if (feature_name[sim.index(max(sim))].split('_'))[0] == (t_feature_name[i].split('_'))[0]:
-    #             top_true.append(1)
-    #         else:
-    #             top_true.append(0)
-    #     sim[sim.index(max(sim))]=0
+
 
