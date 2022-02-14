@@ -9,4 +9,4 @@ temp: 用來儲存simese.ipynb 進行data argumentation的暫存資料夾
 
 old test: 儲存過去測試程式檔
 
-15張圖: https://drive.google.com/file/d/1rP_YJAsCJilmJKksJ2jnuPS36lhopfJ7/view?usp=sharing
+訓練資料連結:https://drive.google.com/drive/folders/1_sY24iBTcrKgQIqeSiYR7LiqZFLtD4Sf?usp=sharing
