@@ -5,8 +5,9 @@
 
 研究方法:  
 利用simese network 的架構進行訓練，可以理解為將三個CNN model 串接在一起，最後再利用歐氏距離計算Triplet loss  
-![image](https://user-images.githubusercontent.com/86472351/153794682-a09ef3c7-ccac-4fa0-9666-1ba2a2390843.png)  
-
+  
+![image](https://user-images.githubusercontent.com/86472351/153794971-e409a701-dd05-4d8f-95f8-1b9e0c3a1a6a.png)
+  
 由上圖可看到imput 圖片分為anchor, positive 和negative
 
 
