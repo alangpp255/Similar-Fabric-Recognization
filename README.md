@@ -1,5 +1,21 @@
 # similar_fabric
 
+研究目標:
+訓練能用來辨識兩布料是否相似的特徵萃取模型
+
+研究方法:  
+利用simese network 的架構進行訓練，可以理解為將三個CNN model 串接在一起，最後再利用歐氏距離計算Triplet loss  
+![image](https://user-images.githubusercontent.com/86472351/153794682-a09ef3c7-ccac-4fa0-9666-1ba2a2390843.png)  
+
+由上圖可看到imput 圖片分為anchor, positive 和negative
+
+
+
+
+研究結果:  
+經測試後發現以keras ResNet50 的pre-trained model 作為特徵萃取基礎模型表現較AlexNet 和VGG16更好，因此未來修正若要想嘗試換model，可以避免用VGG16或AlexNet
+
+
 主要程式:  
 simese.ipynb: 訓練深度學習模型的主程式 (詳細操作在註解中)  
 
