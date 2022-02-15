@@ -38,14 +38,23 @@ temp: 用來儲存simese.ipynb 進行data argumentation的暫存資料夾
 old test: 儲存過去測試程式檔
   
   
-# similar fabric更新步驟
+# similar fabric 更新方法
 1. 將新的布料類型加入fabric_data 資料集:  
-資料夾按照相似布料類型歸檔(每個資料夾下都是一類相似的布料) 
+資料夾按照相似布料類型歸檔(每個資料夾名稱為一類相似布料的代號) 
   
 ![image](https://user-images.githubusercontent.com/86472351/153983251-e412270a-1cb9-4275-bced-f755b3b5ca3c.png)  
   
 ![image](https://user-images.githubusercontent.com/86472351/153983698-5057908c-d1da-4690-b70e-55caa33c5f34.png)  
 
-2.
+2. 修改 simese.ipynb 路徑:  
+os_base = '存放上述所有資料夾的路徑'  
+data_file = 'fabric_data'   
+
+3. 順著跑後，會得到兩個模型結果siamese_triplet、embedding_model，並以.h5的副檔名儲存下來
+上述兩模型 都用 model = load_model('xxxx.h5') 方式可重新讀入
+siamese_triplet: 用來繼續之前的訓練 ， history = model.fit(x=train_x, shuffle=True, batch_size=batch,validation_split=.2, epochs=5)
+embedding_model: 用來萃取特徵，以比較相似度的model (最終放在wevearbird 後端)    
+
+4. embedding_model替換至 Weaverbird 主程式的方法
 
 
