@@ -50,11 +50,12 @@ old test: 儲存過去測試程式檔
 os_base = '存放上述所有資料夾的路徑'  
 data_file = 'fabric_data'   
 
-3. 順著跑後，會得到兩個模型結果siamese_triplet、embedding_model，並以.h5的副檔名儲存下來
-上述兩模型 都用 model = load_model('xxxx.h5') 方式可重新讀入
-siamese_triplet: 用來繼續之前的訓練 ， history = model.fit(x=train_x, shuffle=True, batch_size=batch,validation_split=.2, epochs=5)
-embedding_model: 用來萃取特徵，以比較相似度的model (最終放在wevearbird 後端)    
+3. 順著跑後，會得到兩個模型結果siamese_triplet、embedding_model，並以.h5的副檔名儲存下來  
+上述兩模型 都用 model = load_model('xxxx.h5') 方式可重新讀入  
+siamese_triplet: 用來繼續之前的訓練 ， history = model.fit(x=train_x, shuffle=True, batch_size=batch,validation_split=.2, epochs=5)  
+embedding_model: 用來萃取特徵，以比較相似度的model (最終放在wevearbird 後端)  
 
-4. embedding_model替換至 Weaverbird 主程式的方法
-
+4. embedding_model替換至 Weaverbird 主程式的方法:
+覆蓋weverbird後端 ML_models資料夾下的Res_model_emb_c_1.h5 model，若名稱有修改，需到主程式修改model讀檔名稱  
+覆蓋完成後，定期跑everbird後端的similar fabric主程式即更新完成  (主程式內容請參照該程式內註解)
 
