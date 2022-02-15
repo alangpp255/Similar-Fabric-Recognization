@@ -40,8 +40,10 @@ old test: 儲存過去測試程式檔
   
 # similar fabric更新步驟
 1. 將新的布料類型加入fabric_data 資料集:  
-資料夾按照相似布料類型歸檔(每個資料夾下都是一類相似的布料)  
+資料夾按照相似布料類型歸檔(每個資料夾下都是一類相似的布料) 
+  
 ![image](https://user-images.githubusercontent.com/86472351/153983251-e412270a-1cb9-4275-bced-f755b3b5ca3c.png)  
+  
 ![image](https://user-images.githubusercontent.com/86472351/153983698-5057908c-d1da-4690-b70e-55caa33c5f34.png)  
 
 2.
