@@ -16,7 +16,8 @@
 85%-90%相似布料分類準確度，然而資料集量太小，目前仍有overfitting的問題，未來隨布料增加應當重新訓練
 經測試後發現以keras ResNet50 的pre-trained model 作為特徵萃取基礎模型表現較AlexNet 和VGG16更好，因此未來修正若要想嘗試換model，可以避免用VGG16或AlexNet
 
-
+  
+    
 # similar_fabric 程式說明
 
 ### 資料集連結 (包含fabric_data、說明PPT):  
@@ -35,7 +36,8 @@ temp: 用來儲存simese.ipynb 進行data argumentation的暫存資料夾
 
 ### 過去研究:  
 old test: 儲存過去測試程式檔
-
+  
+  
 # similar fabric更新步驟
 1. 將新的布料類型加入fabric_data 資料集:  
 資料夾按照相似布料類型歸檔(每個資料夾下都是一類相似的布料)  
