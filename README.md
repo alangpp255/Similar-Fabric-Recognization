@@ -4,7 +4,7 @@
 Develop a feature extraction model that can identify whether two cloths are similar
 
 ### Methods:  
-Use simese networkr that connects 3 CNN models together, and then use the Euclidean distance to calculate the Triplet loss
+Use siamese network that connects 3 CNN models together, and then use the Euclidean distance to calculate the Triplet loss
   
 ![image](https://user-images.githubusercontent.com/86472351/153794971-e409a701-dd05-4d8f-95f8-1b9e0c3a1a6a.png)
   
